@@ -1,0 +1,9 @@
+{
+    "app": {
+        "title": "App Tracker",
+        "description": "Unknown utilities for tracking your apps"
+    },
+    "common": {
+        "language": "Language"
+    }
+}

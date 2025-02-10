@@ -1,0 +1,9 @@
+{
+    "app": {
+        "title": "应用追踪器",
+        "description": "用于追踪应用的未知工具"
+    },
+    "common": {
+        "language": "语言"
+    }
+}
