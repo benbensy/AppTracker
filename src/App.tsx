@@ -1,39 +1,23 @@
-import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-} from "@/components/ui/select";
-import { SelectValue } from "@radix-ui/react-select";
 import DefaultLayout from "./layouts/DefaultLayout";
 import IndexPage from "./pages/IndexPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import { LoginPage, RegisterPage } from "./pages/AuthPage";
+import CenterLayout from "./layouts/CenterLayout";
 
 function App() {
-  const { i18n, t } = useTranslation();
-
-  function changeLanguage(lng: string) {
-    i18n.changeLanguage(lng);
-  }
-
   return (
-    <div className="p-2 flex flex-col items-center">
-      <Select onValueChange={changeLanguage}>
-        <SelectTrigger className="w-32">
-          <SelectValue
-            placeholder={t("common.language")}
-          />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="en">English</SelectItem>
-          <SelectItem value="zh-CN">简体中文</SelectItem>
-        </SelectContent>
-      </Select>
+    <div className="w-full h-full flex flex-col items-center">
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
-          <Route index element={<IndexPage />} />
+          <Route index element={<IndexPage />}></Route>
         </Route>
+        <Route path="/auth" element={<CenterLayout />}>
+          <Route index element={<NotFoundPage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="register" element={<RegisterPage />} />
+        </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
   );

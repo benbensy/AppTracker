@@ -1,9 +1,21 @@
 {
-    "app": {
-        "title": "应用追踪器",
-        "description": "用于追踪应用的未知工具"
-    },
-    "common": {
-        "language": "语言"
-    }
+  "app": {
+    "title": "应用追踪器",
+    "description": "用于追踪应用的未知工具",
+    "username": "用户名",
+    "email": "邮箱",
+    "usernameOrEmail": "用户名或邮箱",
+    "password": "密码",
+    "passwordConfirmation": "确认密码",
+    "login": "登录",
+    "register": "注册",
+    "welcome$": "欢迎，{{name}}！",
+    "toLogin": "去登录",
+    "toRegister": "去注册",
+    "goBack": "返回",
+    "search": "搜索"
+  },
+  "common": {
+    "language": "语言"
+  }
 }

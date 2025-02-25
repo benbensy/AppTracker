@@ -1,5 +1,12 @@
-import { Outlet } from 'react-router';
+import { Outlet } from "react-router";
 
 export default function DefaultLayout() {
-    return <Outlet />
+  return (
+    <div className="flex flex-col w-full h-full">
+      <div></div>
+      <div>
+        <Outlet />
+      </div>
+    </div>
+  );
 }

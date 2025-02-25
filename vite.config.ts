@@ -18,7 +18,8 @@ export default defineConfig(({mode}) => {
       proxy: {
         '/api/': {
           'target': env.VITE_MOCK_API_URL,
-          rewrite: (path) => path.replace(/^\/api/, '')
+          rewrite: (path) => path.replace(/^\/api/, ''),
+          changeOrigin: true
         }
       }
     }

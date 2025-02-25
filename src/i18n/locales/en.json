@@ -1,9 +1,21 @@
 {
-    "app": {
-        "title": "App Tracker",
-        "description": "Unknown utilities for tracking your apps"
-    },
-    "common": {
-        "language": "Language"
-    }
+  "app": {
+    "title": "App Tracker",
+    "description": "Unknown utilities for tracking your apps",
+    "username": "Username",
+    "email": "Email",
+    "usernameOrEmail": "Username or Email",
+    "password": "Password",
+    "passwordConfirmation": "Password Confirmation",
+    "login": "Login",
+    "register": "Register",
+    "welcome$": "Welcome, {{name}}!",
+    "toLogin": "To Login",
+    "toRegister": "To Register",
+    "goBack": "Go Back",
+    "search": "Search"
+  },
+  "common": {
+    "language": "Language"
+  }
 }
